@@ -28,7 +28,7 @@ api = tweepy.API(authenticate, wait_on_rate_limit=True)
 
 
 def app():
-    st.title("Tweet Analyzer 🔥")
+    st.title("Tweet Analyzer")
 
     activities = ["Tweet Analyzer", "Generate Twitter Data"]
 
@@ -40,14 +40,13 @@ def app():
 
         st.subheader("This tool performs the following tasks :")
 
-        st.write("1. Fetches the 5 most recent tweets from the given twitter handel")
+        st.write("1. Fetches the 15 most recent tweets from the given twitter handel")
         st.write("2. Generates a Word Cloud")
         st.write("3. Performs Sentiment Analysis a displays it in form of a Bar Graph")
 
         raw_text = st.text_area("Enter the exact twitter handle of the Personality (without @)")
 
-        st.markdown("<--------     Also Do checkout the another cool tool from the sidebar")
-
+       
         Analyzer_choice = st.selectbox("Select the Activities",
                                        ["Show Recent Tweets", "Generate WordCloud", "Visualize the Sentiment Analysis"])
 
