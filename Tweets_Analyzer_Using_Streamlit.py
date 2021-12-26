@@ -40,7 +40,7 @@ def app():
 
         st.subheader("This tool performs the following tasks :")
 
-        st.write("1. Fetches the 15 most recent tweets from the given twitter handel")
+        st.write("1. Fetches the 50 most recent tweets from the given twitter handel")
         st.write("2. Generates a Word Cloud")
         st.write("3. Performs Sentiment Analysis a displays it in form of a Bar Graph")
 
@@ -54,7 +54,7 @@ def app():
 
             if Analyzer_choice == "Show Recent Tweets":
 
-                st.success("Fetching last 5 Tweets")
+                st.success("Fetching last 50 Tweets")
 
                 def Show_Recent_Tweets(raw_text):
 
